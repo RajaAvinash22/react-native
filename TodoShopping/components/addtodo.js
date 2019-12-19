@@ -19,18 +19,13 @@ const changeHandler = (val)=>{
     setText(val);
 }
 
-
-
     return(
         <View >
             <TextInput style={styles.input}
             placeholder='new Todo...'
             onChangeText={changeHandler}
-            
             />
             <Button onPress={()=>submiHandler(text)} title='add todo' color='coral' />
-
-            
         </View>
     )
 }
